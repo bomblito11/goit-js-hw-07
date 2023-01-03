@@ -15,6 +15,7 @@ function scaleImage(e) {
   document.addEventListener("keydown", function escapeKey(event) {
     if (event.key === "Escape") {
       instance.close();
+      document.removeEventListener("keydown", escapeKey);
     }
   });
 }
